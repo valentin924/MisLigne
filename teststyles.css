@@ -1,32 +1,30 @@
 
 
-.banner {
+.main {
     display: flex;
     justify-content: center;
 }
 
 
 .feature.left {
-    text-align: justify;
+    text-align: -webkit-center;
+    
 }
 .feature {
     position: inherit;
-    height: 29em;
+    height: 25em;
+}
+.feature.left.one{
+margin-bottom:-4em; 
 }
 
-feature.left .content {
-    padding-right: 0;
-}
 .feature .content {
     display: inline-block;
     padding: 3.5em;
     vertical-align: middle;
     width: 48%;
 }
-.feature.right .image {
-    float: right;
 
-}
 
 .box image {
     display: flex;
@@ -40,8 +38,10 @@ feature.left .content {
     overflow: hidden;
     position: relative;
     width: 50%;
-    
-
+    }
+*, ::after, ::before {
+    box-sizing: content-box;
+}
             
 .banner {
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(images/night-KL.jpg);
@@ -65,19 +65,61 @@ feature.left .content {
     justify-content: center;
 }
 
-/* On screens that are 992px wide or less, the background color is blue */
-@media screen and (max-width: 600px) {
-  body {
-    background-color: red;
-  }
-  .box {
-    display: flex;
-    align-content: center;
-  }
 
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: rgba(0,123,255,.25);
+}
 .content img {
     display: flex;
 }
-.body{
-  background-color:#7d7129;
+
+.head h2 {
+  margin-top: 2rem;
+  display: flex;
+  align-content:center;
+  text-align: center;
 }
+
+img {
+    vertical-align: -webkit-baseline-middle;
+    border-style: none;
+}
+
+
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: rgba(0,123,255,.25);
+    display: flex;
+    align-content: center;
+    box-sizing: auto;
+    justify-content: center;
+    padding: 0px;
+
+  }
+  .carousel {
+    front-size: 20px;
+    padding: 0px;
+    width: 100%;
+  }
+  .main{
+    padding: 0px;
+    display: flex;
+  align-items: flex-start;
+  flex-direction: unset;
+  justify-content: unset;
+  }
+ 
+  }
+} 
+
+
+
