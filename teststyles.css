@@ -1,70 +1,6 @@
 
-
-.main {
-    display: flex;
-    justify-content: center;
-}
-
-
-.feature.left {
-    text-align: -webkit-center;
-    
-}
-.feature {
-    position: inherit;
-    height: 25em;
-}
-.feature.left.one{
-margin-bottom:-4em; 
-}
-
-.feature .content {
-    display: inline-block;
-    padding: 3.5em;
-    vertical-align: middle;
-    width: 48%;
-}
-
-
-.box image {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.feature .image {
-    display: inline-block;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    width: 50%;
-    }
-*, ::after, ::before {
-    box-sizing: content-box;
-}
-            
-.banner {
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(images/night-KL.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  padding: 100px 50px;
-  
-}
-
-.banner-content {
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.content p {
-    display: flex;
-    justify-content: center;
-}
-
+@import ' composants/feature.css';
+@import 'composants/responsive.css';
 
 body {
     margin: 0;
@@ -76,9 +12,7 @@ body {
     text-align: left;
     background-color: rgba(0,123,255,.25);
 }
-.content img {
-    display: flex;
-}
+
 
 .head h2 {
   margin-top: 2rem;
@@ -87,39 +21,10 @@ body {
   text-align: center;
 }
 
-img {
-    vertical-align: -webkit-baseline-middle;
-    border-style: none;
-}
 
 
 
-/* On screens that are 992px wide or less, the background color is blue */
-@media screen and (max-width: 992px) {
-  body {
-    background-color: rgba(0,123,255,.25);
-    display: flex;
-    align-content: center;
-    box-sizing: auto;
-    justify-content: center;
-    padding: 0px;
 
-  }
-  .carousel {
-    front-size: 20px;
-    padding: 0px;
-    width: 100%;
-  }
-  .main{
-    padding: 0px;
-    display: flex;
-  align-items: flex-start;
-  flex-direction: unset;
-  justify-content: unset;
-  }
- 
-  }
-} 
 
 
 

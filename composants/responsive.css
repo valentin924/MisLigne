@@ -1,0 +1,48 @@
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: rgba(0,123,255,.25);
+    box-sizing: auto;
+    padding: 0px;
+    box-sizing: o;
+
+  }
+
+  .carousel-top {
+    width: 100%;
+  }
+
+  .container{
+    padding: 0px;
+    display: block;
+  }
+  .d-block {
+    width: 100%;
+    height: auto;
+  }
+  h2 {
+    display: flex;
+  }
+  .bouton{
+    display: flex;
+
+  }
+  .feature {
+    width: 100%;
+    height: auto;
+  }
+
+  .feature img  {
+    width: 100%;
+    }
+
+  .feature .content {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+  }
+  .feature.left.one {
+    margin-bottom: 0px;
+  }
+ 
+  }
